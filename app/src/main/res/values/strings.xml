@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RxJava</string>
+    <string name="input_guide">깃허브 아이디를 입력하세요.</string>
+    <string name="input_next">확 인</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_reload">Reload</string>
+</resources>
