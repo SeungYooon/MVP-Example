@@ -1,24 +1,18 @@
 package com.example.rxjava.view
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
-import androidx.recyclerview.widget.RecyclerView
 import com.example.rxjava.R
 import com.example.rxjava.base.BaseActivity
 import com.example.rxjava.model.Dog
 import com.example.rxjava.presenter.SearchContract
 import com.example.rxjava.presenter.SearchPresenter
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : BaseActivity(), SearchContract.View {
+class MVPActivity : BaseActivity(), SearchContract.View {
 
     // MainActivity와 1:1 대응하는 SearchPresenter를 연결시켜주기 위한 초기화 지연 변수
     private lateinit var searchPresenter: SearchPresenter
@@ -31,6 +25,16 @@ class MainActivity : BaseActivity(), SearchContract.View {
         searchPresenter.takeView(this)
 
         getDogList()
+
+        goNext()
+    }
+
+    // go mvvm
+    private fun goNext() {
+        buttonNext.setOnClickListener {
+            val intent = Intent(this@MVPActivity, MVVMActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     // 버튼 클릭시 Presenter에 이벤트 발생함을 전달과 동시에 Model로부터 데이터 가져오라는 것을 알려줌
@@ -59,7 +63,7 @@ class MainActivity : BaseActivity(), SearchContract.View {
     }
 
     override fun showError(error: String) {
-        Toast.makeText(this@MainActivity, error, Toast.LENGTH_SHORT).show()
+        Toast.makeText(this@MVPActivity, error, Toast.LENGTH_SHORT).show()
     }
 
     override fun showLoading() {
