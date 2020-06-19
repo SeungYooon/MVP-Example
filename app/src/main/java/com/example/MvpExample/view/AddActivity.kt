@@ -1,12 +1,12 @@
-package com.example.rxjava.view
+package com.example.MvpExample.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProviders
-import com.example.rxjava.R
-import com.example.rxjava.viewmodel.ContactViewModel
-import com.example.rxjava.model.Contact
+import com.example.MvpExample.R
+import com.example.MvpExample.viewmodel.ContactViewModel
+import com.example.MvpExample.model.Contact
 import kotlinx.android.synthetic.main.activity_add.*
 
 class AddActivity : AppCompatActivity() {

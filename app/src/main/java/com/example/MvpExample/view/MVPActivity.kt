@@ -1,15 +1,15 @@
-package com.example.rxjava.view
+package com.example.MvpExample.view
 
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
-import com.example.rxjava.R
-import com.example.rxjava.base.BaseActivity
-import com.example.rxjava.model.Dog
-import com.example.rxjava.presenter.SearchContract
-import com.example.rxjava.presenter.SearchPresenter
+import com.example.MvpExample.R
+import com.example.MvpExample.base.BaseActivity
+import com.example.MvpExample.model.Dog
+import com.example.MvpExample.presenter.SearchContract
+import com.example.MvpExample.presenter.SearchPresenter
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MVPActivity : BaseActivity(), SearchContract.View {

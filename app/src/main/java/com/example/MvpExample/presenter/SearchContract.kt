@@ -1,8 +1,8 @@
-package com.example.rxjava.presenter
+package com.example.MvpExample.presenter
 
-import com.example.rxjava.base.BasePresenter
-import com.example.rxjava.base.BaseView
-import com.example.rxjava.model.Dog
+import com.example.MvpExample.base.BasePresenter
+import com.example.MvpExample.base.BaseView
+import com.example.MvpExample.model.Dog
 
 // view, presenter가 구현해야할 interface를 정의하는 contract
 interface SearchContract {

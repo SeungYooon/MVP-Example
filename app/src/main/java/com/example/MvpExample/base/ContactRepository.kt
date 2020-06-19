@@ -1,8 +1,8 @@
-package com.example.rxjava.base
+package com.example.MvpExample.base
 
 import android.app.Application
 import androidx.lifecycle.LiveData
-import com.example.rxjava.model.Contact
+import com.example.MvpExample.model.Contact
 import java.lang.Exception
 
 class ContactRepository(application: Application) {

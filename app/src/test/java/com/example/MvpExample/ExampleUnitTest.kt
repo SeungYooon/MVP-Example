@@ -1,4 +1,4 @@
-package com.example.rxjava
+package com.example.MvpExample
 
 import org.junit.Test
 

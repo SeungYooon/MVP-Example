@@ -1,12 +1,12 @@
-package com.example.rxjava.adapter
+package com.example.MvpExample.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.rxjava.R
-import com.example.rxjava.model.Contact
+import com.example.MvpExample.R
+import com.example.MvpExample.model.Contact
 
 class ContactAdapter(
     val contactItemClick: (Contact) -> Unit,

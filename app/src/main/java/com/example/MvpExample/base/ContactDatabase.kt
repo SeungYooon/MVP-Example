@@ -1,10 +1,10 @@
-package com.example.rxjava.base
+package com.example.MvpExample.base
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.example.rxjava.model.Contact
+import com.example.MvpExample.model.Contact
 
 @Database(entities = [Contact::class], version = 1)
 abstract class ContactDatabase : RoomDatabase() {

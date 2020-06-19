@@ -1,8 +1,8 @@
-package com.example.rxjava.base
+package com.example.MvpExample.base
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.example.rxjava.model.Contact
+import com.example.MvpExample.model.Contact
 
 @Dao
 interface ContactDao {

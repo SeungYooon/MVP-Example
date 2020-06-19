@@ -1,8 +1,7 @@
-package com.example.rxjava.presenter
+package com.example.MvpExample.presenter
 
-import android.content.Intent
 import android.os.Handler
-import com.example.rxjava.model.DogList
+import com.example.MvpExample.model.DogList
 
 // view와 1:1 관계를 유지할 presenter
 class SearchPresenter : SearchContract.Presenter {

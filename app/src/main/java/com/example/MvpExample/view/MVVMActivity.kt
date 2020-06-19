@@ -1,4 +1,4 @@
-package com.example.rxjava.view
+package com.example.MvpExample.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,10 +6,10 @@ import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import com.example.rxjava.R
-import com.example.rxjava.adapter.ContactAdapter
-import com.example.rxjava.viewmodel.ContactViewModel
-import com.example.rxjava.model.Contact
+import com.example.MvpExample.R
+import com.example.MvpExample.adapter.ContactAdapter
+import com.example.MvpExample.viewmodel.ContactViewModel
+import com.example.MvpExample.model.Contact
 import kotlinx.android.synthetic.main.activity_m_v_v_m.*
 
 class MVVMActivity : AppCompatActivity() {

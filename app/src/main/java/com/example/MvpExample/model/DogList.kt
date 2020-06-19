@@ -1,4 +1,4 @@
-package com.example.rxjava.model
+package com.example.MvpExample.model
 
 object DogList {
     fun getDoglistData(): List<Dog> {
